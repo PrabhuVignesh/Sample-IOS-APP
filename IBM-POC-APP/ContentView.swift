@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("This is the IBM POC Application")
+        Text("This is a Sample Application")
             .font(.title)
             .multilineTextAlignment(.center)
             .padding()
