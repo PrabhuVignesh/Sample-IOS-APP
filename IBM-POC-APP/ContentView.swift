@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showDetails = false
     var body: some View {
-        Text("This is a Sample Application")
-            .font(.title)
-            .multilineTextAlignment(.center)
-            .padding()
-            
+        VStack(alignment: .leading) {
+            Button("Show details") {
+                showDetails.toggle()
+            }
+
+            if showDetails {
+                Text("Hi, I am working when you press 'Show Detail' button")
+                    .font(.largeTitle)
+                    .fontWeight(.black)
+            }
+        }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
