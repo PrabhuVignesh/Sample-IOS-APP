@@ -14,6 +14,7 @@
 		6DE22678276D091100930425 /* IBM_POC_APPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE22677276D091100930425 /* IBM_POC_APPTests.swift */; };
 		6DE22682276D091100930425 /* IBM_POC_APPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE22681276D091100930425 /* IBM_POC_APPUITests.swift */; };
 		6DE22684276D091100930425 /* IBM_POC_APPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE22683276D091100930425 /* IBM_POC_APPUITestsLaunchTests.swift */; };
+		6DE22691276D204D00930425 /* exportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DE22690276D204D00930425 /* exportOptions.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		6DE2267D276D091100930425 /* IBM-POC-APPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IBM-POC-APPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE22681276D091100930425 /* IBM_POC_APPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBM_POC_APPUITests.swift; sourceTree = "<group>"; };
 		6DE22683276D091100930425 /* IBM_POC_APPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBM_POC_APPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6DE22690276D204D00930425 /* exportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		6DE2265A276D090E00930425 = {
 			isa = PBXGroup;
 			children = (
+				6DE22690276D204D00930425 /* exportOptions.plist */,
 				6DE22665276D090E00930425 /* IBM-POC-APP */,
 				6DE22676276D091100930425 /* IBM-POC-APPTests */,
 				6DE22680276D091100930425 /* IBM-POC-APPUITests */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DE2266E276D091000930425 /* Preview Assets.xcassets in Resources */,
+				6DE22691276D204D00930425 /* exportOptions.plist in Resources */,
 				6DE2266B276D091000930425 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

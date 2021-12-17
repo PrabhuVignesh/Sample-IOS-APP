@@ -1,0 +1,41 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "This Lane will Build"
+  lane :build do
+    build_ios_app(
+      scheme: 'IBM-POC-APP',
+      output_directory: 'build/',
+      archive_path: 'build/',
+      output_name: 'app',
+      configuration: 'Release',
+      include_symbols: true,
+      export_method: 'development',
+      xcargs: '-allowProvisioningUpdates'
+    )
+  end
+  desc 'Description of what the lane does'
+  lane :unit_tests do
+    scan(
+      scheme: 'IBM-POC-APP',
+      devices: ['iPhone 11 Pro Max'],
+      output_types: 'junit',
+      output_files: 'IBM-POC-APP.junit'
+    )
+  end
+end
